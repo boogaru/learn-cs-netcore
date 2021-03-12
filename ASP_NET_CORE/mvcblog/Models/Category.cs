@@ -8,6 +8,7 @@ namespace mvcblog.Models {
     [Table("Category")] // Model  tương ứng với bảng Category
     public class Category {
         
+        //primary key của bảng Category
         [Key]
         public int Id { get; set; }
 

@@ -32,7 +32,7 @@ namespace mvcblog {
 
             services.AddDistributedMemoryCache();           // Đăng ký dịch vụ lưu cache trong bộ nhớ (Session sẽ sử dụng nó)
             services.AddSession(cfg => {                    // Đăng ký dịch vụ Session
-                cfg.Cookie.Name = "xuanthulab";             // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
+                cfg.Cookie.Name = "hoangvunguyen";             // Đặt tên Session - tên này sử dụng ở Browser (Cookie)
                 cfg.IdleTimeout = new TimeSpan(0,30, 0);    // Thời gian tồn tại của Session
             });
 
@@ -194,7 +194,7 @@ namespace mvcblog {
 
             app.Run (async (HttpContext context) => {
                 context.Response.StatusCode = StatusCodes.Status404NotFound;
-                await context.Response.WriteAsync ("Page not found (xuanthulab)!");
+                await context.Response.WriteAsync ("Page not found (Hoang Vu Nguyen)!");
             });
 
         }
